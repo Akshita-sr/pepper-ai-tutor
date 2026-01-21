@@ -1,0 +1,21 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore Virtual Environments
+venv/
+env/
+
+# Ignore Database files
+*.db
+*.sqlite3
+
+# Ignore Vector Store (it's too big and generates locally)
+vector_store/
+
+# --- SECURITY ---
+# Ignore your real config file with passwords
+main_brain_py3/config.py
+
+# Ignore Environment variables
+.env

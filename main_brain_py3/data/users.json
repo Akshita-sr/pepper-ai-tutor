@@ -1,0 +1,20 @@
+[
+  {
+    "username": "Alex",
+    "pin": "1234",
+    "profile": {
+      "name": "Alex",
+      "age": 8,
+      "persona": "an encouraging, visual learner who likes short, clear steps and positive reinforcement. Avoid complex vocabulary. Use a cheerful and patient tone."
+    }
+  },
+  {
+    "username": "pepper",
+    "pin": "5678",
+    "profile": {
+      "name": "pepper",
+      "age": 42,
+      "persona": "a direct, logical adult who prefers analytical hints and concise information. Avoid effusive praise. Get straight to the point with clever clues."
+    }
+  }
+]

@@ -1,0 +1,29 @@
+# requirements.txt for the Python 3 Main Brain
+#
+# v6: Minimalist approach. Let pip's dependency resolver
+#     figure out the correct versions for everything.
+
+# For communicating with the robot listener
+pyzmq
+
+# Core LangChain & AI Stack
+langchain
+langchain-openai
+langchain-anthropic
+langchain-google-genai
+langchain-community
+langchain_text_splitters
+langchain_ollama
+# The actual SDKs for the LLMs
+google-generativeai  # <-- ADDED THIS MISSING LINE
+
+
+# Vector Store and Document Loading
+faiss-cpu
+pypdf
+
+# Database
+bcrypt # For securely storing user "passwords" (or PINs)
+
+# Utilities
+python-dotenv
