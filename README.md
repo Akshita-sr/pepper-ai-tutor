@@ -1,22 +1,26 @@
 # Pepper AI Tutor: RAG-Powered Interactive Puzzles
 
 ## 📖 Project Overview
+
 This project turns a SoftBank Pepper robot into an intelligent, context-aware tutor. It uses **Retrieval Augmented Generation (RAG)** to allow the robot to "read" a PDF of puzzles and generate personalized hints for users using Large Language Models (LLMs) like Claude 3 or GPT-4.
 
 ## 🏗 Architecture
+
 Because Pepper's NAOqi OS requires Python 2.7, but modern AI libraries require Python 3, this project uses a **Split-Process Architecture** connected via **ZeroMQ**.
 
-1.  **The Brain (Python 3):** Handles logic, database, RAG (Vector Store), and LLM API calls.
-2.  **The Body (Python 2.7):** A lightweight listener that translates JSON commands into NAOqi robot actions (Speech, Animation, Tablet).
+1. **The Brain (Python 3):** Handles logic, database, RAG (Vector Store), and LLM API calls.
+2. **The Body (Python 2.7):** A lightweight listener that translates JSON commands into NAOqi robot actions (Speech, Animation, Tablet).
 
 ## ✨ Features
-*   **User Profiles:** Distinguishes between users (e.g., Kid vs. Adult) and adjusts the AI's personality accordingly.
-*   **RAG Memory:** Ingests a PDF (`puzzles.pdf`) to create a searchable knowledge base.
-*   **Smart Hints:** Generates dynamic hints using context from the PDF + the User's Persona.
-*   **Analytics:** Logs which LLM models are used and how fast they respond.
-*   **Model Routing:** Can switch between OpenAI, Anthropic, Google, or DeepSeek via config.
+
+* **User Profiles:** Distinguishes between users (e.g., Kid vs. Adult) and adjusts the AI's personality accordingly.
+* **RAG Memory:** Ingests a PDF (`puzzles.pdf`) to create a searchable knowledge base.
+* **Smart Hints:** Generates dynamic hints using context from the PDF + the User's Persona.
+* **Analytics:** Logs which LLM models are used and how fast they respond.
+* **Model Routing:** Can switch between OpenAI, Anthropic, Google, or DeepSeek via config.
 
 ## 📂 Folder Structure
+
 ```text
 pepper_ai_tutor/
 ├── main_brain_py3/           # THE BRAIN (Modern AI Logic)
