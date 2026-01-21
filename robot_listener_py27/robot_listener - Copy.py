@@ -27,7 +27,7 @@ import zmq  # ZeroMQ is used for fast, reliable network communication,  It liste
 # --- !! CRITICAL CONFIGURATION !! ---
 # Before running, you MUST change this IP address to match the one for your Pepper robot.
 # You can find the robot's IP by pressing the button on its chest once.
-ROBOT_IP = "10.186.13.39"  # <<< CHANGE THIS
+ROBOT_IP = "127.0.0.1"  # <<< CHANGE THIS
 ROBOT_PORT = 9559
 
 
